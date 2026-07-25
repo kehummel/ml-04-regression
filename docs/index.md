@@ -21,19 +21,18 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+I chose to change the dataset for my technical modification.
+I stayed in the seaborn library and changed it from 'penguins' to 'taxis' which focuses on data with taxi rides.
+My target was the fare price and my feature was distance traveled.
 
-Include:
-
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
-
-Compared with the example project,
-explain what is different and why the change matters.
-
-Was it easy, or surprisingly challenging and why do you think so?
+I used the same code in phase 3 to come up with a linear equation.
+I verified that it was the best fit because the majority of the data in the Residuals vs Predicted graph hovered around the zero line.
+Additionally, the RMSE training/testing lines were the closest at 1 degree.
+While the RMSEs did decrease as the degrees increase, both lines decreased by less than 0.3.
+It is better to keep the simplicity of 1 degree when there is such a small amount of change in RMSEs.
+So while there are outliers and 1 degree is not a perfect fit, it is the best fit for the data.
+At then end of the notebook I graphed the residuals for 1, 5, and 9 degrees.
+There does not seem to be any change between the graphs, supporting that there is no overall benefit to increasing the degrees.
 
 ## Phase 5. Custom Project
 

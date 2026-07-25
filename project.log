@@ -127,3 +127,57 @@ dtype: int64
 2026-07-22 16:02:39 | INFO | M04 | Feature:  flipper_length_mm  ->  Target: body_mass_g  (regression)
 2026-07-22 16:02:39 | INFO | M04 | Line:     body_mass_g = 48.8297 * flipper_length_mm + -5614.07
 2026-07-22 16:02:39 | INFO | M04 | ========================
+2026-07-23 13:55:45 | INFO | M04 | === RUN START ===
+2026-07-23 13:55:45 | INFO | M04 | project=M04
+2026-07-23 13:55:45 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-23 13:55:45 | INFO | M04 | python=3.14.3
+2026-07-23 13:55:45 | INFO | M04 | os=Windows 11
+2026-07-23 13:55:45 | INFO | M04 | shell=powershell
+2026-07-23 13:55:45 | INFO | M04 | cwd=notebooks
+2026-07-23 13:55:45 | INFO | M04 | github_actions=False
+2026-07-23 13:55:45 | INFO | M04 | Confirming installation:
+2026-07-23 13:55:45 | INFO | M04 |   python:       3.14.3
+2026-07-23 13:55:45 | INFO | M04 |   pandas:       3.0.3
+2026-07-23 13:55:45 | INFO | M04 |   numpy:        2.5.1
+2026-07-23 13:55:45 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-23 13:55:45 | INFO | M04 |   seaborn:      0.13.2
+2026-07-23 13:55:45 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-23 14:04:54 | INFO | M04 | Loading dataset: planets
+2026-07-23 14:04:55 | INFO | M04 | Loaded: 1035 rows (instances), 6 columns
+2026-07-23 14:05:14 | INFO | M04 | Loading dataset: planets
+2026-07-23 14:05:14 | INFO | M04 | Loaded: 1035 rows (instances), 6 columns
+2026-07-23 14:05:52 | INFO | M04 | Loading dataset: FMRI
+2026-07-23 14:06:33 | INFO | M04 | Loading dataset: taxis
+2026-07-23 14:06:34 | INFO | M04 | Loaded: 6433 rows (instances), 14 columns
+2026-07-23 14:14:22 | INFO | M04 | Original rows: 6433  Model rows: 6433
+2026-07-23 14:15:15 | INFO | M04 | Train instances: 5146
+2026-07-23 14:15:15 | INFO | M04 | Test instances: 1287
+2026-07-23 14:15:25 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-23 14:15:26 | INFO | M04 | Fitted line: fare = 2.78479 * distance + 4.66844
+2026-07-23 14:15:31 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-23 14:15:31 | INFO | M04 |   R-squared: 0.8277
+2026-07-23 14:15:31 | INFO | M04 |   RMSE:      4.67388  (in units of Fare (dollars))
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 1  train RMSE=4.48598  test RMSE=4.67388
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 2  train RMSE=4.4858  test RMSE=4.67111
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 3  train RMSE=4.40592  test RMSE=4.6529
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 4  train RMSE=4.39508  test RMSE=4.64659
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 5  train RMSE=4.39281  test RMSE=4.64976
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 6  train RMSE=4.39129  test RMSE=4.65082
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 7  train RMSE=4.3534  test RMSE=4.62416
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 8  train RMSE=4.35336  test RMSE=4.62228
+2026-07-23 14:16:03 | DEBUG | M04 |   degree= 9  train RMSE=4.22879  test RMSE=4.58643
+2026-07-23 14:16:03 | DEBUG | M04 |   degree=10  train RMSE=4.22784  test RMSE=4.58684
+2026-07-23 14:16:27 | INFO | M04 | ========================
+2026-07-23 14:16:27 | INFO | M04 | SUMMARY
+2026-07-23 14:16:27 | INFO | M04 | ========================
+2026-07-23 14:16:27 | INFO | M04 | Dataset:  taxis
+2026-07-23 14:16:27 | INFO | M04 | Feature:  distance  ->  Target: fare  (regression)
+2026-07-23 14:16:27 | INFO | M04 | Line:     fare = 2.78479 * distance + 4.66844
+2026-07-23 14:16:27 | INFO | M04 | ========================
+2026-07-23 14:19:57 | INFO | M04 | Original rows: 6433  Model rows: 6433
+2026-07-25 08:01:45 | INFO | M04 | Degree 1 test RMSE: 4.67388
+2026-07-25 08:01:45 | INFO | M04 | Degree 2 test RMSE: 4.67111
+2026-07-25 08:01:45 | INFO | M04 | Degree 9 test RMSE: 4.58643
+2026-07-25 08:02:38 | INFO | M04 | Degree 1 test RMSE: 4.67388
+2026-07-25 08:02:38 | INFO | M04 | Degree 5 test RMSE: 4.64976
+2026-07-25 08:02:39 | INFO | M04 | Degree 9 test RMSE: 4.58643
