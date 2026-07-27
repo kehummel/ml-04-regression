@@ -97,7 +97,7 @@ Comparing 4 regression models:
 
 [Phase 4 Notebook: ml_04_regression_hummel](notebooks/ml_04_regression_hummel.ipynb)
 
-[Phase 5 Notebook: ml04_hummel](notebooks/04 Project/ml04_hummel.ipynb)
+[Phase 5 Notebook: ml04_hummel](notebooks/04_Project/ml04_hummel.ipynb)
 
 ## Citation
 

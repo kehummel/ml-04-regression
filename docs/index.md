@@ -24,9 +24,9 @@ I chose to change the dataset for my technical modification. I stayed in the sea
 
 I used the same code in phase 3 to come up with a linear equation. I verified that it was the best fit because the majority of the data in the Residuals vs Predicted graph hovered around the zero line. Additionally, the RMSE training/testing lines were the closest at 1 degree. While the RMSEs did decrease as the degrees increase, both lines decreased by less than 0.3. It is better to keep the simplicity of 1 degree when there is such a small amount of change in RMSEs. So while there are outliers and 1 degree is not a perfect fit, it is the best fit for the data. At then end of the notebook I graphed the residuals for 1, 5, and 9 degrees. There does not seem to be any change between the graphs, supporting that there is no overall benefit to increasing the degrees.
 
-![Residuals vs Predicted](./docs/images/04_P4_residuals_vs_predicted.png)
+![Residuals vs Predicted](./images/04_P4_residuals_vs_predicted.png)
 
-![RMSE & Degrees](./docs/images/04_P4_RMSE.png)
+![RMSE & Degrees](./images/04_P4_RMSE.png)
 
 ## Phase 5. Custom Project
 This module's custom project focused on predicting the fare for each passenger based on different features.
@@ -47,7 +47,7 @@ The target is fare price. It determined what type of model we needed to use (reg
 ### Features
 The first three features were chosen for us: age, family_size, and age + family_size. These work as examples for how to use a regression model because they are numerical features.
 
-In the original directions, we were supposed to pick another feature to analyse. I originally chose embarked, as I thought that the town they left from might help predict the ticket price; this is case 4. However, when I was completing Section 3 reflection questions, I realized that the class of ticket (pclass) would most likely be a better predictor. I decided to add on extra cases instead of changing out my original choice as I wanted to see more examples of how the regression models worked. So I added in case 5, which looked at pclass, and case 6, which looked at pclass + embarked.
+In the original directions, we were supposed to pick another feature to analyze. I originally chose embarked, as I thought that the town they left from might help predict the ticket price; this is case 4. However, when I was completing Section 3 reflection questions, I realized that the class of ticket (pclass) would most likely be a better predictor. I decided to add on extra cases instead of changing out my original choice as I wanted to see more examples of how the regression models worked. So I added in case 5, which looked at pclass, and case 6, which looked at pclass + embarked.
 
 ### Evaluation and Results
 We started by running a linear regression model on all 6 cases and compared their output. We looked at the R-squared data between the training and testing data sets to see if we were overfitting or underfitting our data. We looked at the RMSE and the MAE to see how closely our data fit to the line.
