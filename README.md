@@ -76,10 +76,9 @@ I calculated the relationship between the distance and the fare (price in dollar
 I used the RMSEs for the training and testing data to confirm 1 degree, a linear equation, was the best fit.
 This was also proven when we looked at the residuals vs predicted dot plot.
 
+![Residuals vs Predicted](./docs/images/04_P4_residuals_vs_predicted.png)
 
-(./docs/images/04 - P4 Residuals vs Predicted.png)
-
-(./docs/images/04 - P4 RMSE.png)
+![RMSE & Degrees](./docs/images/04_P4_RMSE.png)
 
 ### Phase 5
 In phase 5, we created regression models first for different cases in which we were trying to predict the fare cost for all of them.
@@ -87,10 +86,10 @@ Then we compared different regression models.
 Finally we looked at the degrees of a polynomial regression model.
 
 Comparing 6 Cases, trying to predict the fare cost:
-(./docs/images/04_P5_models_per_case.png)
+![Comparing 6 cases](./docs/images/04_P5_models_per_case.png)
 
 Comparing 4 regression models:
-(./docs/images/04_P5_comparing_regression_models.png)
+![Comparing 4 Regression Models](./docs/images/04_P5_comparing_regression_models.png)
 
 ## Project Documentation
 

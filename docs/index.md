@@ -24,6 +24,10 @@ I chose to change the dataset for my technical modification. I stayed in the sea
 
 I used the same code in phase 3 to come up with a linear equation. I verified that it was the best fit because the majority of the data in the Residuals vs Predicted graph hovered around the zero line. Additionally, the RMSE training/testing lines were the closest at 1 degree. While the RMSEs did decrease as the degrees increase, both lines decreased by less than 0.3. It is better to keep the simplicity of 1 degree when there is such a small amount of change in RMSEs. So while there are outliers and 1 degree is not a perfect fit, it is the best fit for the data. At then end of the notebook I graphed the residuals for 1, 5, and 9 degrees. There does not seem to be any change between the graphs, supporting that there is no overall benefit to increasing the degrees.
 
+![Residuals vs Predicted](./docs/images/04_P4_residuals_vs_predicted.png)
+
+![RMSE & Degrees](./docs/images/04_P4_RMSE.png)
+
 ## Phase 5. Custom Project
 This module's custom project focused on predicting the fare for each passenger based on different features.
 
@@ -58,13 +62,15 @@ It was not surprising that the class of ticket had the biggest effect on the pri
 
 There were some outliers in the 1st class tickets that had some very high prices. It would be interesting to remove those outliers and run the regression models again to see if the results were the same.
 
-Comparing 6 Cases, trying to predict the fare cost: (./docs/images/04_P5_models_per_case.png)
+Comparing 6 Cases, trying to predict the fare cost:
+![Comparing 6 cases](./images/04_P5_models_per_case.png)
 
 After we did linear regression models for all 6 cases, we compared those results with different regression models. For this part I focused on case 5, as it contained the feature that gave the best prediction for fare price.
 
 We found that the elastic net and polynomial models outperformed the linear and ridge models. The elastic net and polynomial had R-squared values that were 0.006 bigger than the other models, and lower RMSE and MAE values as well. There was not a big difference but there was some.
 
-Comparing 4 regression models: (./docs/images/04_P5_comparing_regression_models.png)
+Comparing 4 regression models:
+![Comparing 4 Regression Models](./images/04_P5_models_per_case.png)
 
 Lastly, we looked at higher degree polynomials to see if that would affect our scores. For case 5, a higher degree did not affect the output. Because there were only three possible pclass values, adding more degrees did not change the outcomes at all.
 
