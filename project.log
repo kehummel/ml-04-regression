@@ -181,3 +181,339 @@ dtype: int64
 2026-07-25 08:02:38 | INFO | M04 | Degree 1 test RMSE: 4.67388
 2026-07-25 08:02:38 | INFO | M04 | Degree 5 test RMSE: 4.64976
 2026-07-25 08:02:39 | INFO | M04 | Degree 9 test RMSE: 4.58643
+2026-07-25 20:15:22 | INFO | M04 | === RUN START ===
+2026-07-25 20:15:22 | INFO | M04 | project=M04
+2026-07-25 20:15:22 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-25 20:15:22 | INFO | M04 | python=3.14.3
+2026-07-25 20:15:22 | INFO | M04 | os=Windows 11
+2026-07-25 20:15:22 | INFO | M04 | shell=powershell
+2026-07-25 20:15:22 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-25 20:15:22 | INFO | M04 | github_actions=False
+2026-07-25 20:15:22 | INFO | M04 | Confirming installation:
+2026-07-25 20:15:22 | INFO | M04 |   python:       3.14.3
+2026-07-25 20:15:22 | INFO | M04 |   pandas:       3.0.3
+2026-07-25 20:15:22 | INFO | M04 |   numpy:        2.5.1
+2026-07-25 20:15:22 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-25 20:15:22 | INFO | M04 |   seaborn:      0.13.2
+2026-07-25 20:15:22 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-25 20:23:47 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-25 20:23:47 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-25 20:23:47 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-25 20:44:41 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-25 20:44:41 | INFO | M04 | Number of missing values in column:2
+2026-07-25 20:44:41 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-25 20:44:41 | INFO | M04 | Number of missing values in column:0
+2026-07-25 20:44:41 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-25 20:44:41 | INFO | M04 | Number of missing values in column:0
+2026-07-25 20:46:18 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-25 20:46:18 | INFO | M04 | Number of missing values in column:0
+2026-07-25 20:46:18 | INFO | M04 | ========================
+2026-07-25 20:46:18 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-25 20:46:18 | INFO | M04 | Number of missing values in column:0
+2026-07-25 20:46:18 | INFO | M04 | ========================
+2026-07-25 20:46:18 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-25 20:46:18 | INFO | M04 | Number of missing values in column:0
+2026-07-25 20:46:18 | INFO | M04 | ========================
+2026-07-25 20:46:18 | INFO | M04 | Family Size Calculated
+2026-07-25 20:46:18 | INFO | M04 | ========================
+2026-07-25 20:46:18 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-25 20:46:18 | INFO | M04 | ========================
+2026-07-25 21:11:37 | INFO | M04 | === RUN START ===
+2026-07-25 21:11:37 | INFO | M04 | project=M04
+2026-07-25 21:11:37 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-25 21:11:37 | INFO | M04 | python=3.14.3
+2026-07-25 21:11:37 | INFO | M04 | os=Windows 11
+2026-07-25 21:11:37 | INFO | M04 | shell=powershell
+2026-07-25 21:11:37 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-25 21:11:37 | INFO | M04 | github_actions=False
+2026-07-25 21:11:37 | INFO | M04 | Confirming installation:
+2026-07-25 21:11:37 | INFO | M04 |   python:       3.14.3
+2026-07-25 21:11:37 | INFO | M04 |   pandas:       3.0.3
+2026-07-25 21:11:37 | INFO | M04 |   numpy:        2.5.1
+2026-07-25 21:11:37 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-25 21:11:37 | INFO | M04 |   seaborn:      0.13.2
+2026-07-25 21:11:37 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-25 21:11:37 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-25 21:11:37 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-25 21:11:37 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-25 21:11:37 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-25 21:11:37 | INFO | M04 | Number of missing values in column:2
+2026-07-25 21:11:37 | INFO | M04 | ========================
+2026-07-25 21:11:37 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-25 21:11:37 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:11:37 | INFO | M04 | ========================
+2026-07-25 21:11:37 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-25 21:11:37 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:11:37 | INFO | M04 | ========================
+2026-07-25 21:11:37 | INFO | M04 | Family Size Calculated
+2026-07-25 21:11:37 | INFO | M04 | ========================
+2026-07-25 21:11:37 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-25 21:11:37 | INFO | M04 | ========================
+2026-07-25 21:25:19 | INFO | M04 | === RUN START ===
+2026-07-25 21:25:19 | INFO | M04 | project=M04
+2026-07-25 21:25:19 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-25 21:25:19 | INFO | M04 | python=3.14.3
+2026-07-25 21:25:19 | INFO | M04 | os=Windows 11
+2026-07-25 21:25:19 | INFO | M04 | shell=powershell
+2026-07-25 21:25:19 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-25 21:25:19 | INFO | M04 | github_actions=False
+2026-07-25 21:25:19 | INFO | M04 | Confirming installation:
+2026-07-25 21:25:19 | INFO | M04 |   python:       3.14.3
+2026-07-25 21:25:19 | INFO | M04 |   pandas:       3.0.3
+2026-07-25 21:25:19 | INFO | M04 |   numpy:        2.5.1
+2026-07-25 21:25:19 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-25 21:25:19 | INFO | M04 |   seaborn:      0.13.2
+2026-07-25 21:25:19 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-25 21:25:19 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-25 21:25:19 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-25 21:25:19 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-25 21:25:19 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-25 21:25:19 | INFO | M04 | Number of missing values in column:2
+2026-07-25 21:25:19 | INFO | M04 | ========================
+2026-07-25 21:25:19 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-25 21:25:19 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:25:19 | INFO | M04 | ========================
+2026-07-25 21:25:19 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-25 21:25:19 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:25:19 | INFO | M04 | ========================
+2026-07-25 21:25:19 | INFO | M04 | Family Size Calculated
+2026-07-25 21:25:19 | INFO | M04 | ========================
+2026-07-25 21:25:19 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-25 21:25:19 | INFO | M04 | ========================
+2026-07-25 21:27:26 | INFO | M04 | ========================
+2026-07-25 21:42:04 | INFO | M04 | === RUN START ===
+2026-07-25 21:42:04 | INFO | M04 | project=M04
+2026-07-25 21:42:04 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-25 21:42:04 | INFO | M04 | python=3.14.3
+2026-07-25 21:42:04 | INFO | M04 | os=Windows 11
+2026-07-25 21:42:04 | INFO | M04 | shell=powershell
+2026-07-25 21:42:04 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-25 21:42:04 | INFO | M04 | github_actions=False
+2026-07-25 21:42:04 | INFO | M04 | Confirming installation:
+2026-07-25 21:42:04 | INFO | M04 |   python:       3.14.3
+2026-07-25 21:42:04 | INFO | M04 |   pandas:       3.0.3
+2026-07-25 21:42:04 | INFO | M04 |   numpy:        2.5.1
+2026-07-25 21:42:04 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-25 21:42:04 | INFO | M04 |   seaborn:      0.13.2
+2026-07-25 21:42:04 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-25 21:42:04 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-25 21:42:04 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-25 21:42:04 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-25 21:42:04 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-25 21:42:04 | INFO | M04 | Number of missing values in column:2
+2026-07-25 21:42:04 | INFO | M04 | ========================
+2026-07-25 21:42:04 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-25 21:42:04 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:42:04 | INFO | M04 | ========================
+2026-07-25 21:42:04 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-25 21:42:04 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:42:04 | INFO | M04 | ========================
+2026-07-25 21:42:04 | INFO | M04 | Family Size Calculated
+2026-07-25 21:42:04 | INFO | M04 | ========================
+2026-07-25 21:42:04 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-25 21:42:04 | INFO | M04 | ========================
+2026-07-25 21:43:18 | INFO | M04 | === RUN START ===
+2026-07-25 21:43:18 | INFO | M04 | project=M04
+2026-07-25 21:43:18 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-25 21:43:18 | INFO | M04 | python=3.14.3
+2026-07-25 21:43:18 | INFO | M04 | os=Windows 11
+2026-07-25 21:43:18 | INFO | M04 | shell=powershell
+2026-07-25 21:43:18 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-25 21:43:18 | INFO | M04 | github_actions=False
+2026-07-25 21:43:18 | INFO | M04 | Confirming installation:
+2026-07-25 21:43:18 | INFO | M04 |   python:       3.14.3
+2026-07-25 21:43:18 | INFO | M04 |   pandas:       3.0.3
+2026-07-25 21:43:18 | INFO | M04 |   numpy:        2.5.1
+2026-07-25 21:43:18 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-25 21:43:18 | INFO | M04 |   seaborn:      0.13.2
+2026-07-25 21:43:18 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-25 21:43:18 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-25 21:43:18 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-25 21:43:18 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-25 21:43:18 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-25 21:43:18 | INFO | M04 | Number of missing values in column:2
+2026-07-25 21:43:18 | INFO | M04 | ========================
+2026-07-25 21:43:18 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-25 21:43:18 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:43:18 | INFO | M04 | ========================
+2026-07-25 21:43:18 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-25 21:43:18 | INFO | M04 | Number of missing values in column:0
+2026-07-25 21:43:18 | INFO | M04 | ========================
+2026-07-25 21:43:18 | INFO | M04 | Family Size Calculated
+2026-07-25 21:43:18 | INFO | M04 | ========================
+2026-07-25 21:43:18 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-25 21:43:18 | INFO | M04 | ========================
+2026-07-26 18:45:05 | INFO | M04 | === RUN START ===
+2026-07-26 18:45:05 | INFO | M04 | project=M04
+2026-07-26 18:45:05 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 18:45:05 | INFO | M04 | python=3.14.3
+2026-07-26 18:45:05 | INFO | M04 | os=Windows 11
+2026-07-26 18:45:05 | INFO | M04 | shell=powershell
+2026-07-26 18:45:05 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-26 18:45:05 | INFO | M04 | github_actions=False
+2026-07-26 18:45:05 | INFO | M04 | Confirming installation:
+2026-07-26 18:45:05 | INFO | M04 |   python:       3.14.3
+2026-07-26 18:45:05 | INFO | M04 |   pandas:       3.0.3
+2026-07-26 18:45:05 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 18:45:05 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 18:45:05 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 18:45:05 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 18:45:05 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-26 18:45:05 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-26 18:45:05 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-26 18:45:05 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-26 18:45:05 | INFO | M04 | Number of missing values in column:2
+2026-07-26 18:45:05 | INFO | M04 | ========================
+2026-07-26 18:45:05 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-26 18:45:05 | INFO | M04 | Number of missing values in column:0
+2026-07-26 18:45:05 | INFO | M04 | ========================
+2026-07-26 18:45:05 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-26 18:45:05 | INFO | M04 | Number of missing values in column:0
+2026-07-26 18:45:05 | INFO | M04 | ========================
+2026-07-26 18:45:05 | INFO | M04 | Family Size Calculated
+2026-07-26 18:45:05 | INFO | M04 | ========================
+2026-07-26 18:45:05 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-26 18:45:05 | INFO | M04 | ========================
+2026-07-26 20:02:59 | INFO | M04 | === RUN START ===
+2026-07-26 20:02:59 | INFO | M04 | project=M04
+2026-07-26 20:02:59 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 20:02:59 | INFO | M04 | python=3.14.3
+2026-07-26 20:02:59 | INFO | M04 | os=Windows 11
+2026-07-26 20:02:59 | INFO | M04 | shell=powershell
+2026-07-26 20:02:59 | INFO | M04 | cwd=notebooks\04 Project
+2026-07-26 20:02:59 | INFO | M04 | github_actions=False
+2026-07-26 20:02:59 | INFO | M04 | Confirming installation:
+2026-07-26 20:02:59 | INFO | M04 |   python:       3.14.3
+2026-07-26 20:02:59 | INFO | M04 |   pandas:       3.0.3
+2026-07-26 20:02:59 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 20:02:59 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 20:02:59 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 20:02:59 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 20:02:59 | INFO | M04 | Numeric columns (regression target / numeric feature): ['survived', 'pclass', 'age', 'sibsp', 'parch', 'fare']
+2026-07-26 20:02:59 | INFO | M04 | Categorical columns (classification target / category): ['sex', 'embarked', 'class', 'who', 'adult_male', 'deck', 'embark_town', 'alive', 'alone']
+2026-07-26 20:02:59 | INFO | M04 | Missing values by column:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+2026-07-26 20:03:00 | INFO | M04 | Missing ages were filled with the median age, 28
+2026-07-26 20:03:00 | INFO | M04 | Number of missing values in column:2
+2026-07-26 20:03:00 | INFO | M04 | ========================
+2026-07-26 20:03:00 | INFO | M04 | All rows with no fare were dropped from the dataframe
+2026-07-26 20:03:00 | INFO | M04 | Number of missing values in column:0
+2026-07-26 20:03:00 | INFO | M04 | ========================
+2026-07-26 20:03:00 | INFO | M04 | Missing values for embarked were filled in with the mode, S
+2026-07-26 20:03:00 | INFO | M04 | Number of missing values in column:0
+2026-07-26 20:03:00 | INFO | M04 | ========================
+2026-07-26 20:03:00 | INFO | M04 | Family Size Calculated
+2026-07-26 20:03:00 | INFO | M04 | ========================
+2026-07-26 20:03:00 | INFO | M04 | Features sex and embarked changed to numerical values
+2026-07-26 20:03:00 | INFO | M04 | ========================

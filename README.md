@@ -77,18 +77,28 @@ I used the RMSEs for the training and testing data to confirm 1 degree, a linear
 This was also proven when we looked at the residuals vs predicted dot plot.
 
 
-![Degrees](./docs/images/04 - P4 Residuals vs Predicted.png)
+(./docs/images/04 - P4 Residuals vs Predicted.png)
 
-![RMSEs](./docs/images/04 - P4 RMSE.png)
+(./docs/images/04 - P4 RMSE.png)
 
 ### Phase 5
+In phase 5, we created regression models first for different cases in which we were trying to predict the fare cost for all of them.
+Then we compared different regression models.
+Finally we looked at the degrees of a polynomial regression model.
 
+Comparing 6 Cases, trying to predict the fare cost:
+(./docs/images/04_P5_models_per_case.png)
+
+Comparing 4 regression models:
+(./docs/images/04_P5_comparing_regression_models.png)
 
 ## Project Documentation
 
 [docs/index.md](docs/index.md)
 
 [Phase 4 Notebook: ml_04_regression_hummel](notebooks/ml_04_regression_hummel.ipynb)
+
+[Phase 5 Notebook: ml04_hummel](notebooks/project/ml04_hummel.ipynb)
 
 ## Citation
 

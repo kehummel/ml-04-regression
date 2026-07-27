@@ -36,69 +36,58 @@ There does not seem to be any change between the graphs, supporting that there i
 
 ## Phase 5. Custom Project
 
-Describe your custom project and how you made your modeling decisions.
-
-Be specific about what changed from the example project.
+This module's custom project focused on predicted the fare each passenger based on different features.
 
 ### Basis and Data
 
-Describe the dataset, input, or example you started with.
+The original dataset is the "titanic" dataset built into seaborn. We then filled in missing values with the median for age of 28 and the mode for missing town departure names, Southampton or S. I then dropped any row missing a 'fare' data instance as that was our target. I then turned the features 'sex', and 'embarked' into numerical features. I then created an addition feature, 'family size', to state how large each individual's family was.
 
-Include:
-
-- The original example dataset or input
-- The data source
-- Why you chose it, kept it, or changed it
-- Any important limitations or assumptions
+I did not attempt to fill in the missing values for 'deck' as 3/4 of that feature is missing data and I was not using it as a target or feature.
 
 ### Modeling Approach
 
-Describe the problem type and modeling approach for this project.
+I completed supervised regression models in an attempte to find out which feature would best predict the fare price.
 
-Include:
-
-- Is this supervised or unsupervised and how do you know
-- Is this classification, regression, clustering, recommendation, forecasting, or another type of ML task
-- What kind of target works well for this approach
-- Why your selected model or method is appropriate
+Fare price was an appropriate target as it was numerical. In my data preparation I made sure to make all of the features I was using numerical as well, as is needed for a regression model. This was a supervised model because we already know how much each passenger paid for their ticket on the titanic.
 
 ### Target
 
-Describe the example target variable.
-
-Then describe your chosen target variable.
-
-Explain how your target choice changes the modeling approach, interpretation, or evaluation.
+The target is fare price. It determined what type of model we needed to use (regression). This target was chosen for us, but it is a great example of how to use a regression model.
 
 ### Features
 
-Describe the example features.
+The first three features were chose for us: age, family_size, and age + family_size. These work as examples for how to use a regression model because they are numerical features.
 
-Then describe the features you used to predict your target.
-
-Explain what you changed, added, removed, or kept and why.
+In the original directions, we were supposed to pick another feature to analyse. I originally chose embarked, as I thought that the town they left from might help predict the ticket price; this is case 4. However, when I was completing Section 3 reflection questions, I realized that the class of ticket (pclass) would most likely be a better predictor. I decided to add on extra cases instead of changing out my original choice as I wanted to see more examples of how the regression models worked. So I added in case 5, which looked at pclass, and case 6, which looked at pclass + embarked.
 
 ### Evaluation and Results
 
-Describe how you evaluated your model.
+We started by running a linear regression model on all 6 cases and compared their output. We looked at the R-squared data between the training and testing data sets to see if we were overfitting or underfitting our data. We looked at the RMSE and the MAE to see how closely our data fit to the line.
 
-Include:
+Cases 1 through 4 had very little correlation and their data was underfitted, with R-squared values that were very low and close to each other. They also had the highest RMSE and MAE of the six cases.
 
-- The metric or evidence you used
-- The main result
-- Whether the result was useful, interesting, surprising, or disappointing
-- Any weakness, limitation, or next improvement
+Cases 5 and 6 had the highest R-squared values, which case 6 just barely higher than case 5. Their RMSE and MAE scores were the lowest of all 6 cases as well.
+
+As pclass was in both cases 5 and 6, it has the largest impact on fare price. With that in mind, it was still not a strong correlation as the R-squared value was less than 0.33.
+
+It was not surprising that the class of ticket had the biggest effect on the price as the class determined your level of accommodations. And if you wanted more accommodations you would be paying more money.
+
+There were some outliers in the 1st class tickets that had some very high prices. It would be interesting to remove those outliers and run the regression models again to see if the results were the same.
+
+Comparing 6 Cases, trying to predict the fare cost:
+(./docs/images/04_P5_models_per_case.png)
+
+After we did linear regression models for all 6 cases, we compared those results with different regression models. For this part I focused on case 5, as it contained the feature that gave the best prediction for fare price.
+
+We found that the elastic net and polynomial models outperformed the linear and ridge models. The elastic net and polynomial had R-squared values that were 0.006 bigger than the other models, and lower RMSE and MAE values as well. There was not a big difference but there was some.
+
+Comparing 4 regression models:
+(./docs/images/04_P5_comparing_regression_models.png)
+
+Lastly, we looked at higher degree polynomials to see if that would affect our scores. For case 5, a higher degree did not affect the output. Because there were only three possible pclass values, adding more degrees did not change the outcomes at all.
 
 ### Summary
 
-Summarize your custom project.
+This project gave me more experience with running regression models and interpreting them. The most challenging part was remembering all of the terms and their definitions in order to be able to accurately analyze the results.
 
-Include:
-
-- How you implemented your custom model
-- What results you got
-- What you learned
-- How well you exercised the skills covered in this project
-- What kinds of real problems you could apply these skills to in the future
-
-Display at least one image or screenshot showing your work.
+Regression models can work with any data in which we are trying to find a predictive value. This can be anything from housing prices to predicting a business's revenue in the next quarter. I am interested to see if I can use this when analyzing my school's students testing data.
